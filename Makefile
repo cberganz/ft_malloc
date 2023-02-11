@@ -3,25 +3,25 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rbicanic <rbicanic@student.42.fr>          +#+  +:+       +#+         #
+#    By: cberganz <cberganz@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 14:42:18 by cberganz          #+#    #+#              #
-#    Updated: 2023/01/27 13:21:57 by charles          ###   ########.fr        #
+#    Updated: 2023/02/10 23:43:37 by charles          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			= test
+NAME			= malloc
 
-INCLUDE			= include/
+INCLUDE			= includes/
 
 HEADER			= ${INCLUDE}malloc.h
 
-CC				= clang
+CC				= cc
 
 CFLAGS			= -Wall -Wextra -Werror -g
 
-SRC_NAME		= main.c \
-				  malloc.c
+SRC_NAME		= malloc.c \
+				  main.c\
 
 SRC_DIR			= srcs/
 SRC				= ${addprefix ${SRC_DIR}, ${SRC_NAME}}

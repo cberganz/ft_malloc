@@ -1,8 +1,10 @@
-#include "includes/malloc.h"
+#include "malloc.h"
+//#include <stdlib.h>
+#include <stdio.h>
 
 int main(void)
 {
-	for (int i = 0 ; i < 10 ; i++)
+	for (int i = 0 ; i < 9999 ; i++)
 	{
 		char *s = malloc(10);
 		if (!s)
@@ -16,7 +18,8 @@ int main(void)
 		s[6] = 's';
 		s[7] = 'b';
 		s[8] = 'e';
-		s[9] = 'r';
+		s[9] = '\0';
+		//printf("%s\n", s);
 	}
 	return 0;
 }
